@@ -1,0 +1,245 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+    text-align: center;
+    animation: fadeIn 2s;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.back-home {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.back-home:hover {
+    background-color: #444;
+}
+
+/* Recipe grid styles */
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    justify-content: center;
+}
+
+.recipe-item {
+    background: #fff;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.recipe-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.recipe-item h3 {
+    margin-top: 0.5em;
+}
+
+.recipe-item p {
+    margin-top: 0.5em;
+    color: #666;
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15 from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 400px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#alert-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#alert-form label {
+    margin-top: 10px;
+}
+
+#alert-form input {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#alert-form button {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+#alert-form button:hover {
+    background-color: #555;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#post-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#post-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#post-form input[type="file"] {
+    margin-bottom: 10px;
+}
+#about-hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#team {
+    margin: 20px 0;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.team-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.timeline-item {
+    margin-bottom: 15px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.testimonial {
+    border-left: 3px solid #000;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+#cta {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#cta .btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}

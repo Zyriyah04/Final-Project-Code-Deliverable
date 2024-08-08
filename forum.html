@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LovelyZRecipes - Forum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>LovelyZRecipes Forum</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="forum.html" class="active">Forum</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="forum-posts">
+            <h2>Community Posts</h2>
+            <ul id="post-list">
+                <!-- Pre-existing posts with profile pictures -->
+                <li>
+                    <img src="pfp 1.jpeg" alt="Jane Doe" class="profile-pic">
+                    <strong>Mitch Markle:</strong> I tried the pie recipe and my wife can't get enough! Adding any more?
+                </li>
+                <li>
+                    <img src="pfp 2.jpeg" alt="Jane" class="profile-pic">
+                    <strong>Jane Coolier:</strong> Does anyone have a good vegan lasagna recipe?
+                </li>
+                <li>
+                    <img src="pfp 3.jpeg" alt="Alice Brown" class="profile-pic">
+                    <strong>Alice Brown:</strong> The pasta I made with this site is to die for! Highly recommend!
+
+                </li>
+
+                <li>
+                    <img src="pfp 4.jpeg" alt="Josh" class="profile-pic">
+                    <strong>Jakob Ruiz:</strong> That cheesecake was incredible! Love this site!
+                 </li>
+            </ul>
+        </section>
+
+        <section id="post-form">
+            <h2>Share Your Thoughts</h2>
+            <form id="forum-form">
+                <textarea id="post-content" placeholder="Write something..." required></textarea>
+                <button type="submit">Post</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 LovelyZRecipes. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
